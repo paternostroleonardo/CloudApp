@@ -7,6 +7,7 @@ Para poder correr este proyecto de forma exitosa necesita:
 - Maria DB 10.4 ^ o MySQL 8.0 ^
 - Php Version 7.4 con Open Ssl y extensiones DB
 - Jetstream
+- Se realizo en entorno Wampp 
 - NPM (Node Js v14^)
 
 ## Nota
@@ -14,9 +15,20 @@ La aplicación cumple con la mayoria de los requisitos planteados. Como la gesti
 
 ## Comandos para iniciar
 cd nube
-Php artisan Optimize:clear
-npm install && npm run dev
-Php artisan:migrate
+
+- composer update
+- php artisan key:generate
+- php artisan Optimize:clear
+- npm install && npm run dev
+- php artisan:migrate
+- php artisan migrate:fresh --seed
+- Php artisan serve
+
+# Users Default
+
+## Datos Login
+- identification => 1234093438 | 'password' => password
+- identification =>  97120925 | 'password' => password
 
 ## Carpetas
 ![alt text](https://github.com/paternostroleonardo/CloudApp/blob/main/principal.PNG)
