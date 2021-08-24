@@ -14,8 +14,8 @@
 
         <form @submit.prevent="submit">
             <div>
-                <jet-label for="email" value="Email" />
-                <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autofocus />
+                <jet-label for="identification" value="Identification" />
+                <jet-input id="identification" type="text" class="mt-1 block w-full" v-model="form.identification" required autofocus />
             </div>
 
             <div class="mt-4">
@@ -74,7 +74,7 @@
         data() {
             return {
                 form: this.$inertia.form({
-                    email: '',
+                    identification: '',
                     password: '',
                     remember: false
                 })

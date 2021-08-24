@@ -7,6 +7,10 @@
                 Dashboard
             </Link>
 
+            <Link v-if="$page.props.user" :href="route('files')" class="text-sm text-gray-700 underline">
+                Folders
+            </Link>
+
             <template v-else>
                 <Link :href="route('login')" class="text-sm text-gray-700 underline">
                     Log in
